@@ -41,7 +41,7 @@ $(function() {
             password: $('#form_reg [name=password]').val()
         }
 
-        $.post(' /api/reguser', data, function(res) {
+        $.post('/api/reguser', data, function(res) {
 
             if (res.status !== 0) {
                 // layer.msg 弹出框

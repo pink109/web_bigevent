@@ -35,6 +35,7 @@ $(function() {
 
     // 监听注册表单的提交事件
     $('#form_reg').on('submit', function(e) {
+        // 阻止默认提交行为
         e.preventDefault();
         var data = {
             username: $('#form_reg [name=username]').val(),
